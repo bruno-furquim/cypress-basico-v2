@@ -144,7 +144,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         .selectFile('./cypress/fixtures/example.json', { action: 'drag-drop'})
         .should(function ($input) {
             expect($input[0].files[0].name).to.equal('example.json')
-            expect($input[0].files[0].type).to.equal('application/json')
+            expect($input[0].files[0].type).to.equal('aplication/json')
         })
     });
 
@@ -161,14 +161,12 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     it('verifica que a política de privacidade abre em outra aba sem a necessidade de um clique', () => {
         cy.get('#privacy a')
             .should('have.attr', 'target', '_blank')
-            //.invoke('removeAttr', 'target')
     });
 
     it('testa a página da política de privacidade de forma independente', () => {
         cy.get('#privacy a')
             .invoke('removeAttr', 'target')
             .click()
-        //cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT - Política de privacidade')
         cy.contains('Talking About Testing').should('be.visible')
     });
 
