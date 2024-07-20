@@ -28,4 +28,4 @@ If you want to support this project and fork, leave a ⭐.
 
 ___
 
-This project was created with 💚 by [Walmyr](https://walmyr.dev) and update by [Bruno](https://github.com/bruno-furquim/) 💚
+This project was created with 💚 by [Walmyr](https://walmyr.dev) and update by [Bruno](https://github.com/bruno-furquim/) 💚⭐
